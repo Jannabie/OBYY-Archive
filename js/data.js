@@ -1,7 +1,11 @@
 // ========================================
 // DATA STORAGE - Visual Novel Database
-// WITH NEW RELEASE TRACKING
+// WITH NEW RELEASE TRACKING & VERSION SYNC
 // ========================================
+
+// DATA VERSION - UPDATE INI SETIAP KALI ADD/EDIT VN!
+const DATA_VERSION = '1.0.0'; // ← PENTING: Ubah ini jadi '1.0.1', '1.0.2', dst saat update data
+const VERSION_KEY = 'obyy_arsip_data_version';
 
 // LocalStorage key
 const STORAGE_KEY = 'obyy_arsip_vn_data';
@@ -263,11 +267,44 @@ function getNewVNCount() {
 }
 
 // ========================================
+// VERSION CHECK SYSTEM
+// ========================================
+
+/**
+ * Check if data version has changed
+ * If yes, force reload from initialVNData
+ */
+function checkDataVersion() {
+    const storedVersion = localStorage.getItem(VERSION_KEY);
+    
+    if (storedVersion !== DATA_VERSION) {
+        console.log(`📦 Data version mismatch! Stored: ${storedVersion}, Current: ${DATA_VERSION}`);
+        console.log('🔄 Reloading fresh data from server...');
+        
+        // Clear old data
+        localStorage.removeItem(STORAGE_KEY);
+        
+        // Set new version
+        localStorage.setItem(VERSION_KEY, DATA_VERSION);
+        
+        // Save initial data
+        saveVNData(initialVNData);
+        
+        return true; // Version updated
+    }
+    
+    return false; // Version sama
+}
+
+// ========================================
 // DATA FUNCTIONS
 // ========================================
 
 // Load data from localStorage or use initial data
 function loadVNData() {
+    // CRITICAL: Check version first!
+    checkDataVersion();
+    
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
         try {
@@ -370,7 +407,12 @@ function searchVN(query) {
     );
 }
 
-// Initialize data on first load
+// Initialize data on first load OR when version changes
 if (!localStorage.getItem(STORAGE_KEY)) {
+    console.log('🎬 First time initialization');
+    localStorage.setItem(VERSION_KEY, DATA_VERSION);
     saveVNData(initialVNData);
+} else {
+    // Check version even if data exists
+    checkDataVersion();
 }
