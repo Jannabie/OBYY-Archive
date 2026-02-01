@@ -27,7 +27,7 @@ const initialVNData = [
         title: "Higurashi Kai",
         language: "ENGLISH APK",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Higurashi+Kai",
+        image: "https://i.pinimg.com/736x/57/06/7b/57067bde398e3f52b1b5e8f9949f8581.jpg",
         downloadLink: "https://drive.google.com/drive/folders/12ObP0s-vjI7CEBgFMQ_6qu18IEQRgrQq",
         description: "The answer arc to the Higurashi mystery.",
         dateAdded: "2024-01-10"
@@ -37,7 +37,7 @@ const initialVNData = [
         title: "Higurashi Nintendo Switch + Mod",
         language: "ENGLISH",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Higurashi+Switch",
+        image: "https://jetta.vgmtreasurechest.com/soundtracks/higurashi-no-naku-koro-ni-matsuri-original-soundtrack/00%20Booklet%20Front.jpg",
         downloadLink: "https://drive.google.com/drive/folders/11h6nIav_r4JXe6q-Y31t2-JE9vlFzeUd",
         description: "Enhanced version for Nintendo Switch with mods.",
         dateAdded: "2024-01-08"
@@ -47,7 +47,7 @@ const initialVNData = [
         title: "Higurashi Question PC",
         language: "ENGLISH",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Higurashi+Question",
+        image: "https://psxdatacenter.com/psx2/images2/hires/SLPM-66620/SLPM-66620-A-1.jpg",
         downloadLink: "https://drive.google.com/drive/folders/19Zuqy0Y0hjoO4fzQatRFTdBnpsN_8Gck",
         description: "The question arc of the Higurashi series.",
         dateAdded: "2024-01-05"
@@ -57,7 +57,7 @@ const initialVNData = [
         title: "Higurashi Rei",
         language: "ENGLISH APK",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Higurashi+Rei",
+        image: "https://media.senscritique.com/media/000017868428/0/higurashi_when_they_cry.jpg",
         downloadLink: "https://drive.google.com/drive/folders/12UICUuneBWCBEv77qYmzG0fBukcBdBcl",
         description: "OVA episodes of Higurashi series.",
         dateAdded: "2024-01-03"
@@ -67,7 +67,7 @@ const initialVNData = [
         title: "Mamiya",
         language: "ENGLISH",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Mamiya",
+        image: "https://t.vndb.org/cv/56/79656.jpg",
         downloadLink: "https://drive.google.com/drive/folders/1-vdKXN8bGQLiOEI7sk87-daezfKVKMAi",
         description: "A dark psychological horror visual novel.",
         dateAdded: "2023-12-28"
@@ -77,7 +77,7 @@ const initialVNData = [
         title: "Muramasa",
         language: "ENGLISH",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Muramasa",
+        image: "https://t.vndb.org/cv/25/77925.jpg",
         downloadLink: "https://drive.google.com/drive/folders/1hKQQBwfVpVfRjRTQnq1Y2idQZzRn-dwl",
         description: "Epic tale of revenge and supernatural swordplay.",
         dateAdded: "2023-12-25"
