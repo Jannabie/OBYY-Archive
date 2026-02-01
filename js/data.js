@@ -87,7 +87,7 @@ const initialVNData = [
         title: "Rance 1 & 2",
         language: "ENGLISH",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Rance+1+%26+2",
+        image: "https://t.vndb.org/cv/16/95816.jpg",
         downloadLink: "https://drive.google.com/drive/folders/1NKrtK3Ts_Lq9UZQL0rfWd3SUo45gqg1v",
         description: "Classic dungeon crawler RPG visual novel.",
         dateAdded: "2023-12-20"
@@ -97,7 +97,7 @@ const initialVNData = [
         title: "Rance 3",
         language: "ENGLISH",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Rance+3",
+        image: "https://t.vndb.org/cv/15/95815.jpg",
         downloadLink: "https://drive.google.com/drive/folders/18-d4xExkfDQ0HH3dutvQ6t3f0yV6mVct",
         description: "Continuation of Rance's adventures.",
         dateAdded: "2023-12-15"
@@ -107,7 +107,7 @@ const initialVNData = [
         title: "Sakura no Uta",
         language: "JAPANESE",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Sakura+no+Uta",
+        image: "https://m.media-amazon.com/images/I/81Mfua5aBYL._AC_UF1000,1000_QL80_.jpg",
         downloadLink: "https://drive.google.com/drive/folders/10y26pNlDtTbwk47iElXn3OfN8cZ6DitL",
         description: "A story about art, beauty, and human connections.",
         dateAdded: "2023-12-10"
@@ -117,7 +117,7 @@ const initialVNData = [
         title: "Sakura no Toki",
         language: "JAPANESE & ENGLISH PATCH",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Sakura+no+Toki",
+        image: "https://images.gog.com/86ab2b72ddd4e0c954a9a7258966f13b6e90b29754c48f4684ebf9a32215967a_glx_vertical_cover.webp?namespace=gamesdb",
         downloadLink: "https://drive.google.com/file/d/1G2e4MkJP-BrtDVfRW5uonXMRTZKR_JRQ/view?usp=drivesdk",
         description: "Sequel to Sakura no Uta.",
         dateAdded: "2023-12-05"
@@ -127,7 +127,7 @@ const initialVNData = [
         title: "Saya no Uta",
         language: "ENGLISH",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Saya+no+Uta",
+        image: "https://t.vndb.org/cv/68/93368.jpg",
         downloadLink: "https://drive.google.com/file/d/12FleLsjswPfhHgGSgcje0BlIITFbvQ3O/view?usp=drivesdk",
         description: "A dark love story with horror elements.",
         dateAdded: "2023-12-01"
@@ -137,7 +137,7 @@ const initialVNData = [
         title: "Shizuku",
         language: "ENGLISH PREPATCHED",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Shizuku",
+        image: "https://t.vndb.org/cv/40/120240.jpg",
         downloadLink: "https://drive.google.com/drive/folders/1ZSsmvFqY-nkN5uottQmSjxYnnaGbJFgo",
         description: "Classic visual novel from Leaf.",
         dateAdded: "2023-11-25"
@@ -147,7 +147,7 @@ const initialVNData = [
         title: "Shuumatsu no Sugoshikata",
         language: "JAPANESE",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Shuumatsu+no+Sugoshikata",
+        image: "https://t.vndb.org/cv/34/101834.jpg",
         downloadLink: "https://drive.google.com/drive/folders/1dauEPEaEyK88I8Lp6kG2rqvzeP7K3cFe",
         description: "A story about spending time at the end of the world.",
         dateAdded: "2023-11-20"
@@ -157,7 +157,7 @@ const initialVNData = [
         title: "Snow P.E",
         language: "ENGLISH",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Snow+P.E",
+        image: "https://t.vndb.org/cv/29/90129.jpg",
         downloadLink: "https://drive.google.com/drive/folders/1TSeEywX0wg4W6Ttqn-50DLDBfFD5BE5N",
         description: "Enhanced version of the classic Snow visual novel.",
         dateAdded: "2023-11-15"
@@ -167,7 +167,7 @@ const initialVNData = [
         title: "Swan Song",
         language: "ENGLISH",
         category: "general",
-        image: "https://via.placeholder.com/280x350/1a2332/00d9ff?text=Swan+Song",
+        image: "https://t.vndb.org/cv/63/88963.jpg",
         downloadLink: "https://drive.google.com/drive/folders/12TklmS5cONn35weFBl-5KnfHcm6Qfq1w",
         description: "Post-apocalyptic survival visual novel.",
         dateAdded: "2023-11-10"
@@ -175,10 +175,10 @@ const initialVNData = [
     // TYPE-MOON Series
     {
         id: 17,
-        title: "Fate Series + Tsukihime",
+        title: "Fate Series + Tsukihime 2000",
         language: "ENGLISH",
         category: "type-moon",
-        image: "https://via.placeholder.com/280x350/1a2332/7000ff?text=Fate+Series",
+        image: "https://t.vndb.org/cv/71/89071.jpg",
         downloadLink: "https://drive.google.com/drive/folders/1N932yGGICIzNT1FOkGPgUqnYLGJ9sYMG",
         description: "Complete Fate series including spin-offs.",
         dateAdded: "2023-11-05"
@@ -188,7 +188,7 @@ const initialVNData = [
         title: "Mahoyo (Kirikiri)",
         language: "ENGLISH",
         category: "type-moon",
-        image: "https://via.placeholder.com/280x350/1a2332/7000ff?text=Mahoyo",
+        image: "https://t.vndb.org/cv/02/76102.jpg",
         downloadLink: "https://drive.google.com/drive/folders/1-bN-JIyHX3Sca3JOc0DvDPkKpMjS8CYt",
         description: "Witch on the Holy Night - Type-Moon's visual novel.",
         dateAdded: "2023-11-01"
@@ -198,7 +198,7 @@ const initialVNData = [
         title: "Tsukihime Rebuild",
         language: "JAPANESE",
         category: "type-moon",
-        image: "https://via.placeholder.com/280x350/1a2332/7000ff?text=Tsukihime",
+        image: "https://t.vndb.org/cv/82/92482.jpg",
         downloadLink: "https://drive.google.com/drive/folders/1089BHqyLaLema6YmoC6AtT75WYTe83GR",
         description: "Remake of the classic Tsukihime visual novel.",
         dateAdded: "2023-10-25"
@@ -209,7 +209,7 @@ const initialVNData = [
         title: "Umineko Project",
         language: "PC & ANDROID",
         category: "umineko",
-        image: "https://via.placeholder.com/280x350/1a2332/f59e0b?text=Umineko+Project",
+        image: "https://e.snmc.io/lk/f/x/2494c68456901e803cdcca65290a228c/7073389",
         downloadLink: "https://mega.nz/file/X4EyWZoA#eSSo5XV6wsmUwdUBIeJ1tqOgb0GiqQMsxnYvWGag",
         description: "Complete Umineko project compatible with PC and Android.",
         dateAdded: "2023-10-20"
