@@ -275,10 +275,9 @@ body::before {
         linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(10, 10, 10, 0.95)),
         url('https://images7.alphacoders.com/714/714776.jpg');
         
-    background-size: 2000px; /* TETAP 2000px untuk desktop */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: center 1px;
+    background-size: 100% 100%, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
     
     /* CRITICAL FIX: Prevent overflow */
     overflow: hidden;
@@ -755,7 +754,7 @@ body::before {
     
     /* Hero - HANYA adjust height, background TETAP */
     .hero {
-        min-height: 350px; /* Kurangi untuk tablet */
+        min-height: 350px;
     }
     
     .hero-title {
@@ -853,18 +852,20 @@ body::before {
     }
     
     .search-input {
-        padding: 0.75rem 2.8rem 0.75rem 0.9rem;
-        font-size: 0.85rem;
+        padding: 0.7rem 2.6rem 0.7rem 0.85rem;
+        font-size: 0.82rem;
     }
     
     .search-btn {
-        width: 32px;
-        height: 32px;
+        right: 5px;
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
     }
     
     .search-btn svg {
-        width: 18px;
-        height: 18px;
+        width: 15px;
+        height: 15px;
     }
     
     /* Filters */
@@ -886,16 +887,33 @@ body::before {
     /* Modal */
     .modal-content {
         width: 95%;
-        max-height: 95vh;
+        max-height: 90vh;
+    }
+    
+    .modal-header {
+        padding: 1rem 1.2rem !important;
+    }
+    
+    .modal-body {
+        padding: 1rem 1.2rem !important;
     }
     
     .modal-image {
         height: auto;
-        max-height: 400px;
+        max-height: 240px;
+        margin-bottom: 0.75rem !important;
     }
     
     .modal-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+    
+    .download-link {
+        padding: 0.85rem 1rem !important;
+    }
+    
+    .download-link span {
+        font-size: 0.9rem;
     }
     
     /* Update Notification */
