@@ -12,7 +12,7 @@
         /* FIX: Gunakan background-size: cover untuk mobile */
         background-size: cover !important;
         background-position: center center !important;
-        min-height: 400px !important;
+        min-height: 500px !important;
         padding: 2rem 0 !important;
     }
 }
