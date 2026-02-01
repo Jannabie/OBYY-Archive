@@ -5,9 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OBYY-ARSIP | Visual Novel Archive</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile-fix.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- INLINE MOBILE FIX - ULTIMATE FALLBACK -->
+    <style>
+    @media screen and (max-width: 768px) {
+        .header .container .header-content {
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+        }
+        .header .container .header-content .logo {
+            flex-shrink: 0 !important;
+            font-size: 1.1rem !important;
+        }
+        .header .container .header-content .nav {
+            display: flex !important;
+            flex-direction: row !important;
+            width: auto !important;
+            flex-shrink: 0 !important;
+            gap: 0.4rem !important;
+        }
+        .header .container .header-content .nav .nav-link {
+            padding: 0.4rem 0.7rem !important;
+            font-size: 0.8rem !important;
+            white-space: nowrap !important;
+        }
+        .vn-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .header .container .header-content .logo {
+            font-size: 1rem !important;
+        }
+        .header .container .header-content .nav .nav-link {
+            padding: 0.35rem 0.6rem !important;
+            font-size: 0.75rem !important;
+        }
+        .vn-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 0.75rem !important;
+        }
+        .vn-card-image {
+            height: 260px !important;
+        }
+    }
+    </style>
 </head>
 <body>
     <!-- Header -->
