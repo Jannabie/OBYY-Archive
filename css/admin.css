@@ -1,0 +1,470 @@
+/* ========================================
+   ADMIN DASHBOARD STYLES - Dark Theme (No Gradients)
+   ======================================== */
+
+.admin-section {
+    padding: var(--spacing-xl) 0;
+    min-height: calc(100vh - 200px);
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.admin-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    letter-spacing: -0.5px;
+    margin-bottom: var(--spacing-xs);
+}
+
+.admin-welcome {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.admin-welcome strong {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.logout-btn:hover {
+    background: var(--danger);
+    color: white;
+    border-color: var(--danger);
+    transform: translateY(-2px);
+}
+
+.logout-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+    padding: 0.7rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    border: none;
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--accent-primary);
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    border-color: var(--border-focus);
+    color: var(--accent-primary);
+    background: var(--bg-card);
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: white;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--danger);
+}
+
+.btn-danger:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* ========================================
+   FORM
+   ======================================== */
+
+.admin-form {
+    margin-bottom: var(--spacing-xl);
+}
+
+.form-card {
+    background: var(--bg-card);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.form-card h3 {
+    margin-top: 0; /* Mencegah gap aneh di atas header */
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+    position: relative; /* Penting untuk validasi icon jika nanti ada */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem; /* Menggunakan unit fix agar konsisten */
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* --- FIX UTAMA ADA DI SINI --- */
+.form-input {
+    /* Layout Safety */
+    display: block;
+    width: 100%;
+    box-sizing: border-box; /* WAJIB: Agar padding tidak menambah lebar total */
+    
+    /* Dimensions & Spacing */
+    padding: 0.75rem 1rem;
+    margin: 0; /* Reset margin bawaan browser */
+    
+    /* Typography */
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    line-height: 1.5;
+    
+    /* Visuals */
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    
+    /* Interactions */
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover Effect - UX Tambahan */
+.form-input:hover {
+    border-color: var(--border-focus); /* Memberi sinyal elemen bisa diklik */
+}
+
+/* Focus State - Lebih Kontras */
+.form-input:focus {
+    background: var(--bg-card);
+    border-color: var(--accent-primary); /* Menggunakan accent color agar jelas */
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.05);
+}
+
+/* Placeholder Styling */
+.form-input::placeholder {
+    color: var(--text-muted);
+    opacity: 0.8;
+}
+
+/* Support untuk Textarea agar resize rapi */
+textarea.form-input {
+    min-height: 100px;
+    resize: vertical; /* User hanya bisa tarik ke bawah, tidak ke samping */
+}
+
+/* Disabled State */
+.form-input:disabled {
+    background: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+    justify-content: flex-end; /* Tombol biasanya di kanan pada form desktop */
+}
+
+/* ========================================
+   TABLE
+   ======================================== */
+
+.admin-table {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.vn-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.vn-table thead {
+    background: var(--bg-secondary);
+}
+
+.vn-table th {
+    padding: var(--spacing-md);
+    text-align: left;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.vn-table td {
+    padding: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.vn-table tbody tr {
+    transition: background var(--transition-normal);
+}
+
+.vn-table tbody tr:hover {
+    background: var(--bg-secondary);
+}
+
+.table-image {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+}
+
+.table-title {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.table-actions {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.btn-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-normal);
+}
+
+.btn-edit {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-edit:hover {
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-delete {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.btn-delete:hover {
+    background: var(--danger);
+    color: white;
+    border-color: var(--danger);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.category-general {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    border: 1px solid var(--border-light);
+}
+
+.category-type-moon {
+    background: rgba(251, 191, 36, 0.1);
+    color: var(--warning);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.category-umineko {
+    background: rgba(74, 222, 128, 0.1);
+    color: var(--success);
+    border: 1px solid rgba(74, 222, 128, 0.3);
+
+    /* ========================================
+   FIX DROPDOWN / SELECT
+   ======================================== */
+
+select.form-input {
+    /* 1. Hapus panah bawaan browser yang jelek */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    /* 2. Ganti dengan panah custom (SVG Minimalis) */
+    /* Menggunakan icon 'chevron-down' warna putih/abu terang */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    
+    /* Posisi panah */
+    background-repeat: no-repeat;
+    background-position: right 1rem center; /* 1rem dari kanan, tengah vertikal */
+    background-size: 1.2em; /* Ukuran icon */
+    
+    /* 3. Beri ruang ekstra di kanan agar teks tidak nabrak panah */
+    padding-right: 2.5rem; 
+    
+    cursor: pointer;
+}
+
+/* Pastikan warna background option konsisten saat dropdown dibuka */
+select.form-input option {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    padding: 10px;
+}
+}
+
+/* ========================================
+   MODAL SMALL
+   ======================================== */
+
+.modal-small {
+    max-width: 400px;
+}
+
+.modal-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.modal-actions button {
+    flex: 1;
+}
+
+/* ========================================
+   TOAST NOTIFICATION
+   ======================================== */
+
+.toast {
+    position: fixed;
+    bottom: var(--spacing-lg);
+    right: var(--spacing-lg);
+    background: var(--bg-card);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-focus);
+    box-shadow: var(--shadow-lg);
+    z-index: 3000;
+    transform: translateX(400px);
+    transition: transform var(--transition-normal);
+}
+
+.toast.show {
+    transform: translateX(0);
+}
+
+.toast p {
+    margin: 0;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .admin-header {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        align-items: flex-start;
+    }
+    
+    .admin-table {
+        overflow-x: auto;
+    }
+    
+    .vn-table {
+        min-width: 600px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .form-actions button {
+        width: 100%;
+    }
+    
+    .admin-header h2 {
+        font-size: 1.5rem;
+    }
+}
