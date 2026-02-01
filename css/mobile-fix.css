@@ -9,52 +9,62 @@
 
 @media screen and (max-width: 768px) {
     .hero {
-        /* FIX: Gunakan background-size: cover untuk mobile */
         background-size: cover !important;
         background-position: center center !important;
-        min-height: 500px !important;
+        min-height: 350px !important;
         padding: 2rem 0 !important;
     }
 }
 
 @media screen and (max-width: 480px) {
     .hero {
-        /* FIX: Background lebih fit di mobile */
         background-size: cover !important;
-        background-position: center 30% !important; /* Fokus sedikit ke atas */
-        min-height: 450px !important;
-        padding: 2rem 0 !important;
+        background-position: center 30% !important;
+        min-height: 300px !important;
+        padding: 1.5rem 0 !important;
     }
     
-    /* Adjust text agar lebih compact */
     .hero-title {
-        font-size: 1.8rem !important;
-        margin-bottom: 0.75rem !important;
+        font-size: 1.6rem !important;
+        margin-bottom: 0.5rem !important;
     }
     
     .hero-subtitle {
-        font-size: 0.95rem !important;
-        margin-bottom: 1.5rem !important;
+        font-size: 0.85rem !important;
+        margin-bottom: 1rem !important;
     }
     
     .search-box {
         max-width: 100% !important;
-        padding: 0 1rem !important;
+        padding: 0 0.5rem !important;
+    }
+    
+    .search-input {
+        padding: 0.7rem 2.5rem 0.7rem 0.85rem !important;
+        font-size: 0.82rem !important;
+    }
+    
+    .search-btn {
+        width: 30px !important;
+        height: 30px !important;
     }
 }
 
 @media screen and (max-width: 360px) {
     .hero {
-        min-height: 400px !important;
+        min-height: 260px !important;
+        padding: 1.2rem 0 !important;
         background-position: center 25% !important;
     }
     
     .hero-title {
-        font-size: 1.6rem !important;
+        font-size: 1.4rem !important;
+        margin-bottom: 0.4rem !important;
     }
     
     .hero-subtitle {
-        font-size: 0.9rem !important;
+        font-size: 0.8rem !important;
+        margin-bottom: 0.8rem !important;
     }
 }
 

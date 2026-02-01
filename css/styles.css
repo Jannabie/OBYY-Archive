@@ -755,7 +755,7 @@ body::before {
     
     /* Hero - HANYA adjust height, background TETAP */
     .hero {
-        min-height: 500px; /* Kurangi sedikit untuk tablet */
+        min-height: 350px; /* Kurangi untuk tablet */
     }
     
     .hero-title {
@@ -835,8 +835,8 @@ body::before {
     
     /* Hero - Kurangi height untuk mobile, tapi background TETAP */
     .hero {
-        min-height: 400px;
-        padding: 2rem 0;
+        min-height: 300px;
+        padding: 1.5rem 0;
     }
     
     .hero-title {
@@ -844,7 +844,7 @@ body::before {
     }
     
     .hero-subtitle {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
     
     /* Search */
